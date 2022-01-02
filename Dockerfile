@@ -1,7 +1,7 @@
 FROM nginx:latest
 LABEL maintainer="Pratik Chaudhari <chaudharipratikg@gmail.com>"
 
-COPY hello-kubernetes /hello-kubernetes
-COPY hello-kubernetes.conf /etc/nginx/conf.d/hello-kubernetes.conf
+COPY kubernetes-demo /kubernetes-demo
+COPY kubernetes-demo.conf /etc/nginx/conf.d/kubernetes-demo.conf
 
 EXPOSE 5001
