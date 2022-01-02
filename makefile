@@ -5,3 +5,9 @@ start_kubernetes_demo:
 
 stop_kubernetes_demo:
 	docker stop kubernetes-demo
+
+create_kubernetes_demo_cluster:
+	kind create cluster --name kubernetes-demo
+
+delete_kubernetes_demo_cluster:
+	kind delete cluster --name kubernetes-demo
